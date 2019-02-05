@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		292AF51321F3CF67006F75C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292AF51221F3CF67006F75C0 /* AppDelegate.swift */; };
+		292AF51521F3CF67006F75C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292AF51421F3CF67006F75C0 /* ViewController.swift */; };
+		292AF51821F3CF67006F75C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292AF51621F3CF67006F75C0 /* Main.storyboard */; };
+		292AF51A21F3CF68006F75C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292AF51921F3CF68006F75C0 /* Assets.xcassets */; };
+		292AF51D21F3CF68006F75C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292AF51B21F3CF68006F75C0 /* LaunchScreen.storyboard */; };
+		292AF52821F3CF68006F75C0 /* metric_stackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292AF52721F3CF68006F75C0 /* metric_stackTests.swift */; };
+		292AF53321F3CF68006F75C0 /* metric_stackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292AF53221F3CF68006F75C0 /* metric_stackUITests.swift */; };
+		292AF53821F3CF68006F75C0 /* metric-stack WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 292AF53721F3CF68006F75C0 /* metric-stack WatchKit App.app */; };
+		292AF53E21F3CF68006F75C0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292AF53C21F3CF68006F75C0 /* Interface.storyboard */; };
+		292AF54021F3CF69006F75C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292AF53F21F3CF69006F75C0 /* Assets.xcassets */; };
+		292AF54721F3CF69006F75C0 /* metric-stack WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 292AF54621F3CF69006F75C0 /* metric-stack WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		292AF54C21F3CF69006F75C0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292AF54B21F3CF69006F75C0 /* InterfaceController.swift */; };
+		292AF54E21F3CF69006F75C0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292AF54D21F3CF69006F75C0 /* ExtensionDelegate.swift */; };
+		292AF55021F3CF69006F75C0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292AF54F21F3CF69006F75C0 /* NotificationController.swift */; };
+		292AF55221F3CF69006F75C0 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292AF55121F3CF69006F75C0 /* ComplicationController.swift */; };
+		292AF55421F3CF6A006F75C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292AF55321F3CF6A006F75C0 /* Assets.xcassets */; };
+		292AF56C21F4BED1006F75C0 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292AF56B21F4BED1006F75C0 /* HealthKit.framework */; };
+		292AF56F21F4C19B006F75C0 /* HealthKitInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292AF56E21F4C19B006F75C0 /* HealthKitInterface.swift */; };
+		2935E4E42205D7A2005AE439 /* HealthKitInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935E4E32205D7A2005AE439 /* HealthKitInterface.swift */; };
+		2935E4E72205D9EF005AE439 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2935E4E62205D9EF005AE439 /* HealthKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		292AF52421F3CF68006F75C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 292AF50721F3CF67006F75C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292AF50E21F3CF67006F75C0;
+			remoteInfo = "metric-stack";
+		};
+		292AF52F21F3CF68006F75C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 292AF50721F3CF67006F75C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292AF50E21F3CF67006F75C0;
+			remoteInfo = "metric-stack";
+		};
+		292AF53921F3CF68006F75C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 292AF50721F3CF67006F75C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292AF53621F3CF68006F75C0;
+			remoteInfo = "metric-stack WatchKit App";
+		};
+		292AF54821F3CF69006F75C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 292AF50721F3CF67006F75C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 292AF54521F3CF69006F75C0;
+			remoteInfo = "metric-stack WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		292AF55C21F3CF6A006F75C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				292AF54721F3CF69006F75C0 /* metric-stack WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF56021F3CF6A006F75C0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				292AF53821F3CF68006F75C0 /* metric-stack WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		292AF50F21F3CF67006F75C0 /* metric-stack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metric-stack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		292AF51221F3CF67006F75C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		292AF51421F3CF67006F75C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		292AF51721F3CF67006F75C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		292AF51921F3CF68006F75C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		292AF51C21F3CF68006F75C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		292AF51E21F3CF68006F75C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292AF52321F3CF68006F75C0 /* metric-stackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metric-stackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		292AF52721F3CF68006F75C0 /* metric_stackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metric_stackTests.swift; sourceTree = "<group>"; };
+		292AF52921F3CF68006F75C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292AF52E21F3CF68006F75C0 /* metric-stackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metric-stackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		292AF53221F3CF68006F75C0 /* metric_stackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metric_stackUITests.swift; sourceTree = "<group>"; };
+		292AF53421F3CF68006F75C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292AF53721F3CF68006F75C0 /* metric-stack WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metric-stack WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		292AF53D21F3CF68006F75C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		292AF53F21F3CF69006F75C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		292AF54121F3CF69006F75C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292AF54621F3CF69006F75C0 /* metric-stack WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "metric-stack WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		292AF54B21F3CF69006F75C0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		292AF54D21F3CF69006F75C0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		292AF54F21F3CF69006F75C0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		292AF55121F3CF69006F75C0 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		292AF55321F3CF6A006F75C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		292AF55521F3CF6A006F75C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292AF55621F3CF6A006F75C0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		292AF56B21F4BED1006F75C0 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		292AF56D21F4BED1006F75C0 /* metric-stack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "metric-stack.entitlements"; sourceTree = "<group>"; };
+		292AF56E21F4C19B006F75C0 /* HealthKitInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitInterface.swift; sourceTree = "<group>"; };
+		2935E4E32205D7A2005AE439 /* HealthKitInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitInterface.swift; sourceTree = "<group>"; };
+		2935E4E52205D9EF005AE439 /* metric-stack WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "metric-stack WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		2935E4E62205D9EF005AE439 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		292AF50C21F3CF67006F75C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292AF56C21F4BED1006F75C0 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF52021F3CF68006F75C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF52B21F3CF68006F75C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF54321F3CF69006F75C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2935E4E72205D9EF005AE439 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		292AF50621F3CF67006F75C0 = {
+			isa = PBXGroup;
+			children = (
+				292AF51121F3CF67006F75C0 /* metric-stack */,
+				292AF52621F3CF68006F75C0 /* metric-stackTests */,
+				292AF53121F3CF68006F75C0 /* metric-stackUITests */,
+				292AF53B21F3CF68006F75C0 /* metric-stack WatchKit App */,
+				292AF54A21F3CF69006F75C0 /* metric-stack WatchKit Extension */,
+				292AF51021F3CF67006F75C0 /* Products */,
+				292AF56A21F4BED1006F75C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		292AF51021F3CF67006F75C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				292AF50F21F3CF67006F75C0 /* metric-stack.app */,
+				292AF52321F3CF68006F75C0 /* metric-stackTests.xctest */,
+				292AF52E21F3CF68006F75C0 /* metric-stackUITests.xctest */,
+				292AF53721F3CF68006F75C0 /* metric-stack WatchKit App.app */,
+				292AF54621F3CF69006F75C0 /* metric-stack WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		292AF51121F3CF67006F75C0 /* metric-stack */ = {
+			isa = PBXGroup;
+			children = (
+				292AF56D21F4BED1006F75C0 /* metric-stack.entitlements */,
+				292AF51221F3CF67006F75C0 /* AppDelegate.swift */,
+				292AF51421F3CF67006F75C0 /* ViewController.swift */,
+				292AF51621F3CF67006F75C0 /* Main.storyboard */,
+				292AF51921F3CF68006F75C0 /* Assets.xcassets */,
+				292AF51B21F3CF68006F75C0 /* LaunchScreen.storyboard */,
+				292AF51E21F3CF68006F75C0 /* Info.plist */,
+				292AF56E21F4C19B006F75C0 /* HealthKitInterface.swift */,
+			);
+			path = "metric-stack";
+			sourceTree = "<group>";
+		};
+		292AF52621F3CF68006F75C0 /* metric-stackTests */ = {
+			isa = PBXGroup;
+			children = (
+				292AF52721F3CF68006F75C0 /* metric_stackTests.swift */,
+				292AF52921F3CF68006F75C0 /* Info.plist */,
+			);
+			path = "metric-stackTests";
+			sourceTree = "<group>";
+		};
+		292AF53121F3CF68006F75C0 /* metric-stackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				292AF53221F3CF68006F75C0 /* metric_stackUITests.swift */,
+				292AF53421F3CF68006F75C0 /* Info.plist */,
+			);
+			path = "metric-stackUITests";
+			sourceTree = "<group>";
+		};
+		292AF53B21F3CF68006F75C0 /* metric-stack WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				292AF53C21F3CF68006F75C0 /* Interface.storyboard */,
+				292AF53F21F3CF69006F75C0 /* Assets.xcassets */,
+				292AF54121F3CF69006F75C0 /* Info.plist */,
+			);
+			path = "metric-stack WatchKit App";
+			sourceTree = "<group>";
+		};
+		292AF54A21F3CF69006F75C0 /* metric-stack WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2935E4E52205D9EF005AE439 /* metric-stack WatchKit Extension.entitlements */,
+				292AF54B21F3CF69006F75C0 /* InterfaceController.swift */,
+				292AF54D21F3CF69006F75C0 /* ExtensionDelegate.swift */,
+				292AF54F21F3CF69006F75C0 /* NotificationController.swift */,
+				292AF55121F3CF69006F75C0 /* ComplicationController.swift */,
+				292AF55321F3CF6A006F75C0 /* Assets.xcassets */,
+				292AF55521F3CF6A006F75C0 /* Info.plist */,
+				292AF55621F3CF6A006F75C0 /* PushNotificationPayload.apns */,
+				2935E4E32205D7A2005AE439 /* HealthKitInterface.swift */,
+			);
+			path = "metric-stack WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		292AF56A21F4BED1006F75C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2935E4E62205D9EF005AE439 /* HealthKit.framework */,
+				292AF56B21F4BED1006F75C0 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		292AF50E21F3CF67006F75C0 /* metric-stack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292AF56121F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stack" */;
+			buildPhases = (
+				292AF50B21F3CF67006F75C0 /* Sources */,
+				292AF50C21F3CF67006F75C0 /* Frameworks */,
+				292AF50D21F3CF67006F75C0 /* Resources */,
+				292AF56021F3CF6A006F75C0 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292AF53A21F3CF68006F75C0 /* PBXTargetDependency */,
+			);
+			name = "metric-stack";
+			productName = "metric-stack";
+			productReference = 292AF50F21F3CF67006F75C0 /* metric-stack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		292AF52221F3CF68006F75C0 /* metric-stackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292AF56421F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stackTests" */;
+			buildPhases = (
+				292AF51F21F3CF68006F75C0 /* Sources */,
+				292AF52021F3CF68006F75C0 /* Frameworks */,
+				292AF52121F3CF68006F75C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292AF52521F3CF68006F75C0 /* PBXTargetDependency */,
+			);
+			name = "metric-stackTests";
+			productName = "metric-stackTests";
+			productReference = 292AF52321F3CF68006F75C0 /* metric-stackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		292AF52D21F3CF68006F75C0 /* metric-stackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292AF56721F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stackUITests" */;
+			buildPhases = (
+				292AF52A21F3CF68006F75C0 /* Sources */,
+				292AF52B21F3CF68006F75C0 /* Frameworks */,
+				292AF52C21F3CF68006F75C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292AF53021F3CF68006F75C0 /* PBXTargetDependency */,
+			);
+			name = "metric-stackUITests";
+			productName = "metric-stackUITests";
+			productReference = 292AF52E21F3CF68006F75C0 /* metric-stackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		292AF53621F3CF68006F75C0 /* metric-stack WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292AF55D21F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stack WatchKit App" */;
+			buildPhases = (
+				292AF53521F3CF68006F75C0 /* Resources */,
+				292AF55C21F3CF6A006F75C0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				292AF54921F3CF69006F75C0 /* PBXTargetDependency */,
+			);
+			name = "metric-stack WatchKit App";
+			productName = "metric-stack WatchKit App";
+			productReference = 292AF53721F3CF68006F75C0 /* metric-stack WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		292AF54521F3CF69006F75C0 /* metric-stack WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 292AF55921F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stack WatchKit Extension" */;
+			buildPhases = (
+				292AF54221F3CF69006F75C0 /* Sources */,
+				292AF54321F3CF69006F75C0 /* Frameworks */,
+				292AF54421F3CF69006F75C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "metric-stack WatchKit Extension";
+			productName = "metric-stack WatchKit Extension";
+			productReference = 292AF54621F3CF69006F75C0 /* metric-stack WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		292AF50721F3CF67006F75C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = jdp;
+				TargetAttributes = {
+					292AF50E21F3CF67006F75C0 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					292AF52221F3CF68006F75C0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 292AF50E21F3CF67006F75C0;
+					};
+					292AF52D21F3CF68006F75C0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 292AF50E21F3CF67006F75C0;
+					};
+					292AF53621F3CF68006F75C0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					292AF54521F3CF69006F75C0 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 292AF50A21F3CF67006F75C0 /* Build configuration list for PBXProject "metric-stack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 292AF50621F3CF67006F75C0;
+			productRefGroup = 292AF51021F3CF67006F75C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				292AF50E21F3CF67006F75C0 /* metric-stack */,
+				292AF52221F3CF68006F75C0 /* metric-stackTests */,
+				292AF52D21F3CF68006F75C0 /* metric-stackUITests */,
+				292AF53621F3CF68006F75C0 /* metric-stack WatchKit App */,
+				292AF54521F3CF69006F75C0 /* metric-stack WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		292AF50D21F3CF67006F75C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292AF51D21F3CF68006F75C0 /* LaunchScreen.storyboard in Resources */,
+				292AF51A21F3CF68006F75C0 /* Assets.xcassets in Resources */,
+				292AF51821F3CF67006F75C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF52121F3CF68006F75C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF52C21F3CF68006F75C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF53521F3CF68006F75C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292AF54021F3CF69006F75C0 /* Assets.xcassets in Resources */,
+				292AF53E21F3CF68006F75C0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF54421F3CF69006F75C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292AF55421F3CF6A006F75C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		292AF50B21F3CF67006F75C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292AF56F21F4C19B006F75C0 /* HealthKitInterface.swift in Sources */,
+				292AF51521F3CF67006F75C0 /* ViewController.swift in Sources */,
+				292AF51321F3CF67006F75C0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF51F21F3CF68006F75C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292AF52821F3CF68006F75C0 /* metric_stackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF52A21F3CF68006F75C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292AF53321F3CF68006F75C0 /* metric_stackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		292AF54221F3CF69006F75C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292AF55021F3CF69006F75C0 /* NotificationController.swift in Sources */,
+				292AF55221F3CF69006F75C0 /* ComplicationController.swift in Sources */,
+				292AF54E21F3CF69006F75C0 /* ExtensionDelegate.swift in Sources */,
+				292AF54C21F3CF69006F75C0 /* InterfaceController.swift in Sources */,
+				2935E4E42205D7A2005AE439 /* HealthKitInterface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		292AF52521F3CF68006F75C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292AF50E21F3CF67006F75C0 /* metric-stack */;
+			targetProxy = 292AF52421F3CF68006F75C0 /* PBXContainerItemProxy */;
+		};
+		292AF53021F3CF68006F75C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292AF50E21F3CF67006F75C0 /* metric-stack */;
+			targetProxy = 292AF52F21F3CF68006F75C0 /* PBXContainerItemProxy */;
+		};
+		292AF53A21F3CF68006F75C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292AF53621F3CF68006F75C0 /* metric-stack WatchKit App */;
+			targetProxy = 292AF53921F3CF68006F75C0 /* PBXContainerItemProxy */;
+		};
+		292AF54921F3CF69006F75C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 292AF54521F3CF69006F75C0 /* metric-stack WatchKit Extension */;
+			targetProxy = 292AF54821F3CF69006F75C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		292AF51621F3CF67006F75C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				292AF51721F3CF67006F75C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		292AF51B21F3CF68006F75C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				292AF51C21F3CF68006F75C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		292AF53C21F3CF68006F75C0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				292AF53D21F3CF68006F75C0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		292AF55721F3CF6A006F75C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		292AF55821F3CF6A006F75C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		292AF55A21F3CF6A006F75C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "metric-stack WatchKit Extension/metric-stack WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = "metric-stack WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stack.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		292AF55B21F3CF6A006F75C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "metric-stack WatchKit Extension/metric-stack WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = "metric-stack WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stack.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		292AF55E21F3CF6A006F75C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				IBSC_MODULE = metric_stack_WatchKit_Extension;
+				INFOPLIST_FILE = "metric-stack WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stack.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		292AF55F21F3CF6A006F75C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				IBSC_MODULE = metric_stack_WatchKit_Extension;
+				INFOPLIST_FILE = "metric-stack WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stack.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		292AF56221F3CF6A006F75C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "metric-stack/metric-stack.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = "metric-stack/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		292AF56321F3CF6A006F75C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "metric-stack/metric-stack.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L5SSV796L2;
+				INFOPLIST_FILE = "metric-stack/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		292AF56521F3CF6A006F75C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "metric-stackTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metric-stack.app/metric-stack";
+			};
+			name = Debug;
+		};
+		292AF56621F3CF6A006F75C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "metric-stackTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metric-stack.app/metric-stack";
+			};
+			name = Release;
+		};
+		292AF56821F3CF6A006F75C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "metric-stackUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stackUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "metric-stack";
+			};
+			name = Debug;
+		};
+		292AF56921F3CF6A006F75C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "metric-stackUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jdp.metric-stackUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "metric-stack";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		292AF50A21F3CF67006F75C0 /* Build configuration list for PBXProject "metric-stack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292AF55721F3CF6A006F75C0 /* Debug */,
+				292AF55821F3CF6A006F75C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292AF55921F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stack WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292AF55A21F3CF6A006F75C0 /* Debug */,
+				292AF55B21F3CF6A006F75C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292AF55D21F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stack WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292AF55E21F3CF6A006F75C0 /* Debug */,
+				292AF55F21F3CF6A006F75C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292AF56121F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292AF56221F3CF6A006F75C0 /* Debug */,
+				292AF56321F3CF6A006F75C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292AF56421F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292AF56521F3CF6A006F75C0 /* Debug */,
+				292AF56621F3CF6A006F75C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		292AF56721F3CF6A006F75C0 /* Build configuration list for PBXNativeTarget "metric-stackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				292AF56821F3CF6A006F75C0 /* Debug */,
+				292AF56921F3CF6A006F75C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 292AF50721F3CF67006F75C0 /* Project object */;
+}
